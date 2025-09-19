@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مطعم باستوريا</title>
+  <style>
+    body {
+      font-family: 'Cairo', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #ad6d2f;
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 60px 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 0.7rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffc26c;
+    }
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      padding: 2rem 1rem;
+    }
+    .about {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .about img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ad6d2f;
+      margin-bottom: 1rem;
+    }
+    .menu {
+      margin-bottom: 2rem;
+    }
+    .menu h2 {
+      color: #ad6d2f;
+      margin-bottom: 1rem;
+    }
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu li {
+      background: #f2e2d1;
+      margin-bottom: 0.7rem;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact h2 {
+      color: #ad6d2f;
+      margin-bottom: 1rem;
+    }
+    .contact p {
+      margin: 0.5rem 0;
+    }
+    @media (max-width: 700px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem 0.5rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>مطعم باستوريا</h1>
+    <nav>
+      <a href="#about">عن المطعم</a>
+      <a href="#menu">القائمة</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section class="about" id="about">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=facearea&w=400&h=400" alt="مطعم باستوريا">
+      <h2>عن المطعم</h2>
+      <p>
+        مطعم باستوريا يقدم لكم أشهى المأكولات الإيطالية والمختارة بعناية في جو دافئ وعصري. نستخدم أفضل المكونات الطازجة لتقديم تجربة لا تُنسى.
+      </p>
+    </section>
+    <section class="menu" id="menu">
+      <h2>قائمة الطعام</h2>
+      <ul>
+        <li><span>بيتزا مارغريتا</span> <span>40 ريال</span></li>
+        <li><span>باستا ألفريدو</span> <span>35 ريال</span></li>
+        <li><span>ريزوتو بالفطر</span> <span>37 ريال</span></li>
+        <li><span>سلطة سيزر</span> <span>22 ريال</span></li>
+        <li><span>تيراميسو</span> <span>18 ريال</span></li>
+      </ul>
+    </section>
+    <section class="contact" id="contact">
+      <h2>تواصل معنا</h2>
+      <p>الهاتف: 0555555555</p>
+      <p>العنوان: شارع النخيل، الرياض</p>
+      <p>أوقات العمل: 1م - 12ص</p>
+    </section>
+  </div>
+</body>
+</html>
