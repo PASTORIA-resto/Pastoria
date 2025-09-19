@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASTORIA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            background-color: #fcfcfc;
+        }
+        .hero-background {
+            /* REPLACE THE URL BELOW WITH THE LINK TO YOUR OWN IMAGE */
+            background-image: url('https://i.imgur.com/your-image-url.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="hero-background flex flex-col items-center justify-center text-center px-4 py-20">
+        <div class="bg-white bg-opacity-70 p-6 md:p-12 rounded-xl max-w-2xl mx-auto shadow-2xl backdrop-blur-sm">
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tight mb-4 text-red-900">PASTORIA</h1>
+            <p class="text-lg md:text-xl font-medium text-gray-800">Authentic Italian Cuisine</p>
+            <a href="#menu" class="mt-8 inline-block bg-red-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">View Menu</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white bg-opacity-80 backdrop-blur-lg shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-red-900 mb-2 sm:mb-0">PASTORIA</a>
+            <div class="flex space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-red-900 transition-colors duration-300">About</a>
+                <a href="#menu" class="text-gray-600 hover:text-red-900 transition-colors duration-300">Menu</a>
+                <a href="#gallery" class="text-gray-600 hover:text-red-900 transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-gray-600 hover:text-red-900 transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-16">
+
+        <!-- About Section -->
+        <section id="about" class="py-16 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-4 text-red-900">Our Story</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Welcome to PASTORIA, where every dish is a celebration of our heritage and a tribute to the traditions passed down through generations. Our kitchen is a place of passion and respect for the simple, high-quality ingredients that define true Italian cuisine. We believe that great food brings people together, and our warm, inviting atmosphere is designed to make you feel like part of our family.
+                </p>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-900">Our Menu</h2>
+
+            <h3 class="text-3xl font-semibold text-center mb-8 text-red-800">Antipasti</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
+                <!-- Menu Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/800x600/b38867/4a4a4a?text=Bruschetta" alt="Bruschetta" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2 text-red-800">Bruschetta al Pomodoro</h4>
+                        <p class="text-gray-600 text-sm">Toasted bread topped with fresh, diced tomatoes, garlic, basil, and extra virgin olive oil.</p>
+                        <span class="block mt-4 text-red-900 font-bold">$12.00</span>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/800x600/8d6e63/4a4a4a?text=Calamari+Fritti" alt="Calamari Fritti" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2 text-red-800">Calamari Fritti</h4>
+                        <p class="text-gray-600 text-sm">Lightly fried calamari rings served with a spicy marinara dipping sauce.</p>
+                        <span class="block mt-4 text-red-900 font-bold">$15.50</span>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/800x600/d4b497/4a4a4a?text=Caprese" alt="Caprese Salad" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2 text-red-800">Caprese Salad</h4>
+                        <p class="text-gray-600 text-sm">Sliced fresh mozzarella, ripe tomatoes, sweet basil, and a balsamic glaze.</p>
+                        <span class="block mt-4 text-red-900 font-bold">$14.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-semibold text-center mb-8 text-red-800">Primi Piatti</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Menu Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/800x600/b85c5c/4a4a4a?text=Lasagna" alt="Lasagna" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2 text-red-800">Lasagna Bolognese</h4>
+                        <p class="text-gray-600 text-sm">Layers of fresh pasta, our signature meat ragù, creamy béchamel, and parmesan cheese.</p>
+                        <span class="block mt-4 text-red-900 font-bold">$22.00</span>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/800x600/9b7965/4a4a4a?text=Gnocchi" alt="Gnocchi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2 text-red-800">Gnocchi al Pesto</h4>
+                        <p class="text-gray-600 text-sm">Handmade potato gnocchi tossed in a vibrant basil pesto with toasted pine nuts.</p>
+                        <span class="block mt-4 text-red-900 font-bold">$19.50</span>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/800x600/c2c2c2/4a4a4a?text=Spaghetti+Carbonara" alt="Spaghetti Carbonara" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2 text-red-800">Spaghetti alla Carbonara</h4>
+                        <p class="text-gray-600 text-sm">A Roman classic with crispy guanciale, pecorino romano, egg, and black pepper.</p>
+                        <span class="block mt-4 text-red-900 font-bold">$18.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-900">Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <img src="https://placehold.co/800x600/b99470/f5f5f5?text=Fresh+Pasta" alt="Fresh Pasta" class="w-full h-auto rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/800x600/7a7a7a/f5f5f5?text=Cozy+Interior" alt="Cozy Interior" class="w-full h-auto rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/800x600/c7a76c/f5f5f5?text=Artichoke+Salad" alt="Artichoke Salad" class="w-full h-auto rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/800x600/8d6e63/f5f5f5?text=Wine+Cellar" alt="Wine Cellar" class="w-full h-auto rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-red-100 rounded-xl">
+            <div class="max-w-4xl mx-auto text-center p-8">
+                <h2 class="text-4xl font-bold mb-4 text-red-900">Contact & Reservations</h2>
+                <div class="text-lg text-gray-800 space-y-2 mb-8">
+                    <p>123 Main Street, Anytown, Italy</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: <a href="mailto:info@pastoria.com" class="text-red-800 hover:underline">info@pastoria.com</a></p>
+                </div>
+                <p class="text-xl font-semibold mb-4 text-gray-700">Hours of Operation</p>
+                <ul class="text-gray-600 mb-8 max-w-sm mx-auto">
+                    <li>Tuesday - Thursday: 5:00 PM - 10:00 PM</li>
+                    <li>Friday - Saturday: 5:00 PM - 11:00 PM</li>
+                    <li>Sunday: 1:00 PM - 9:00 PM</li>
+                    <li>Monday: Closed</li>
+                </ul>
+                <a href="#" class="inline-block bg-red-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">Make a Reservation</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-white text-center py-8">
+        <p class="text-sm">&copy; 2024 PASTORIA. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
